@@ -4,7 +4,7 @@ def extract(line):
     groups = re.search('(\w)(\d+)', line)
     return (groups[1], int(groups[2]))
 
-f = open('input.data')
+f = open('./day12/input.data')
 data = [extract(line) for line in f.readlines()]
 print(*data)
 
